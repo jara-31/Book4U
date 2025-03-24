@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(Pictures/Website-Design-Background.jpg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.profile-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-header h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.profile-header p {
+    color: gray;
+    margin: 5px 0;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #efefef;
+}
+
+.events-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.events-section h3 {
+    margin-bottom: 10px;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #d8d8d8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    width: 30%; 
+    max-width: 60%; 
+}
+
+
+.event-item i {
+    font-size: 20px;
+    color: #2d89ff;
+}
+
+.event-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background: #7d4aff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+.logout-btn:hover {
+    background: #6933ff;
+}
+
+.back-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(Pictures/Website-Design-Background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh;
+    overflow-y: auto; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero {
+    background: navy;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.create-event-btn {
+    background: #a674ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.create-btn:hover {
+    background: #8a5cd6;
+}
+
+.search-box {
+    background: navy;
+    padding: 20px;
+    margin-top: -20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.select-box {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+select, input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+.search-btn {
+    background: #a674ff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background: #8a5cd6;
+}
+
+.events {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+/* Event Card */
+.event-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    padding-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.event-card img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.event-card h3 {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Buttons */
+.event-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.details-btn, .book-btn {
+    border: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.details-btn {
+    background: gray;
+    color: white;
+}
+
+.book-btn {
+    background: #a674ff;
+    color: white;
+}
+
+.details-btn:hover {
+    background: darkgray;
+}
+
+.book-btn:hover {
+    background: #8a5cd6;
+}
